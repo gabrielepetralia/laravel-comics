@@ -1,0 +1,60 @@
+.comics {
+    background-color: #1c1c1c;
+
+    .gp-container {
+        position: relative;
+        color: white;
+        padding: 60px 0 20px;
+
+        h1 {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            display: inline-block;
+            text-transform: uppercase;
+            color: white;
+            background-color: $primary-color;
+            padding: 10px 30px;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .gp-card {
+                width: calc(100% / 6);
+                padding: 0 10px;
+
+                .thumb {
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                }
+
+                h5 {
+                    text-transform: uppercase;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .load {
+            @include centerFlex("horizontal");
+
+            button {
+                text-transform: uppercase;
+                color: white;
+                background-color: $primary-color;
+                border: none;
+                letter-spacing: 0.1rem;
+                padding: 12px 55px;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
