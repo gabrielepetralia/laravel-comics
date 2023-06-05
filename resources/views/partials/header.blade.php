@@ -13,7 +13,7 @@
         <ul>
 
           @foreach ($main_menu as $menu_item)
-          <li v-for="(link, index) in headerMenu" :key="index">
+          <li>
             <a href="{{ route($menu_item["name"])}}" class="fs-sm fw-medium {{ Route::currentRouteName() === $menu_item["name"] ? "active" : ""}}">{{ $menu_item["text"] }}</a>
           </li>
           @endforeach

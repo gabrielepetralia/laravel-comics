@@ -1,0 +1,95 @@
+footer {
+    .top {
+        background-image: url("../img/footer-bg.jpg");
+        background-size: cover;
+
+        .gp-container {
+            overflow: hidden;
+            min-height: 200px;
+            position: relative;
+            padding-top: 35px;
+            display: flex;
+
+            .gp-col {
+                margin-right: 40px;
+                margin-bottom: 20px;
+
+                h4 {
+                    color: white;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                ul {
+
+                    li {
+                        a {
+                            text-transform: capitalize;
+                            color: rgb(191, 191, 191);
+
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .logo-bg {
+                position: absolute;
+                top: -105px;
+                right: 0;
+            }
+
+        }
+    }
+
+    .bottom {
+        padding: 30px 0;
+        background-color: #303030;
+
+        .gp-container {
+            @include centerFlex("vertical");
+            justify-content: space-between;
+
+            .sign-up {
+                text-transform: uppercase;
+                border: 2px solid $primary-color;
+                color: white;
+                background-color: transparent;
+                letter-spacing: 0.1rem;;
+                padding: 12px 20px;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+
+            .socials {
+                display: flex;
+                align-content: center;
+
+                h3 {
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    padding-top: 3px;
+                    margin-right: 10px;
+                }
+
+                ul {
+                    display: flex;
+
+                    li {
+                        margin-left: 20px;
+
+                        a:hover img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
