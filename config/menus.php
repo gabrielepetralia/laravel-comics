@@ -45,7 +45,7 @@ return [
     ],
 
     "footer_menus" => [
-        "dc_comics" => [
+        "dc comics" => [
             [
                 "name"=> "characters",
                 "text"=> "characters",
@@ -184,5 +184,33 @@ return [
             "name"=> "Periscope",
             "icon"=> "footer-periscope.png",
         ],
+    ],
+
+    "cta_menu" => [
+        [
+            "href"=> "#",
+            "icon"=> "buy-comics-digital-comics.png",
+            "text"=> "digital comics",
+        ],
+        [
+            "href"=> "#",
+            "icon"=> "buy-comics-merchandise.png",
+            "text"=> "dc merchandise",
+        ],
+        [
+            "href"=> "#",
+            "icon"=> "buy-comics-subscription.png",
+            "text"=> "subscription",
+        ],
+        [
+            "href"=> "#",
+            "icon"=> "buy-comics-shop-locator.png",
+            "text"=> "comic shop locator",
+        ],
+        [
+            "href"=> "#",
+            "icon"=> "buy-comics-dc-power-visa.svg",
+            "text"=> "dc power visa",
+        ]
     ]
 ];

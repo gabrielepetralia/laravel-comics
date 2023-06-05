@@ -1,0 +1,38 @@
+.cta {
+    background-color: $primary-color;
+    padding: 55px 0;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            @include centerFlex("vertical");
+
+            .icon {
+                @include centerFlex("both");
+                height: 55px;
+
+                img {
+                    max-height: 100%;
+                }
+            }
+
+            &:last-child {
+                .icon {
+                    width: 60px;
+                }
+            }
+
+            a {
+                text-transform: uppercase;
+                color: white;
+                padding-left: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
