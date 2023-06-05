@@ -1,20 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
-    }
-}
-
-img {
-    max-height: 150px;
-}
+@import "./partials/variables";
+@import "./partials/mixin";
+@import "./partials/general";
+@import "./partials/typography";
+@import "./sections/header";

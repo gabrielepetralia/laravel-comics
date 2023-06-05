@@ -1,0 +1,19 @@
+@mixin container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin centerFlex($type) {
+  display: flex;
+
+  @if $type == "horizontal" {
+    justify-content: center;
+  } @else if $type == "vertical" {
+    align-items: center;
+  } @else if $type == "both" {
+    justify-content: center;
+    align-items: center;
+  }
+}
+

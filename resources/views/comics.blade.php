@@ -1,9 +1,9 @@
 @extends("layout.main")
 
 @section("title")
-    Home
+    Comics
 @endsection
 
 @section("content")
-    <h1>Home</h1>
+    <h1>Comics</h1>
 @endsection

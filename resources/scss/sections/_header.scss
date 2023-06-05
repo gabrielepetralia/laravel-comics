@@ -1,0 +1,45 @@
+header {
+    .gp-container {
+        @include centerFlex("vertical");
+        justify-content: space-between;
+
+        height: 120px;
+
+        .logo {
+            height: 100%;
+            padding: 20px 0;
+
+            img {
+                max-height: 100%;
+            }
+        }
+
+        nav {
+            height: 100%;
+
+            ul {
+                display: flex;
+                height: 100%;
+
+                li {
+                    padding: 0 18px;
+
+                    a {
+                        @include centerFlex("vertical");
+                        height: 100%;
+                        text-transform: uppercase;
+                        color: rgb(86, 86, 86);
+                        padding: 20px 0px;
+                        border-bottom: 5px solid transparent;
+
+                        &:hover,
+                        &.active {
+                            color: $primary-color;
+                            border-bottom: 5px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

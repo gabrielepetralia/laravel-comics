@@ -1,0 +1,55 @@
+body {
+  font-family: $primary-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.fs {
+  &-xs {
+    font-size : 0.8rem;
+  }
+
+  &-sm {
+    font-size : 0.85rem;
+  }
+
+  &-md {
+    font-size : 1rem;
+  }
+
+  &-lg {
+    font-size : 1.2rem;
+  }
+
+  &-xl {
+    font-size : 1.4rem;
+  }
+
+  &-xxl {
+    font-size: 1.7rem;
+  }
+}
+
+.fw {
+  &-light {
+    font-weight: 300;
+  }
+
+  &-regular {
+    font-weight: 400;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-semibold {
+    font-weight: 600;
+  }
+}
