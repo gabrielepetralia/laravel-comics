@@ -36,8 +36,7 @@
                     @foreach ($social_menu as $menu_item)
                     <li>
                         <a href="{{ $menu_item["href"] }}">
-                            {{-- <img class="social-logo" src="{{ Vite::asset('resources/img/{{ $menu_item["icon"] }}') }}" alt="{{ $menu_item["name"] }}"> --}}
-                            <img class="social-logo" src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="{{ $menu_item["name"] }}">
+                            <img class="social-logo" src="{{ Vite::asset('resources/img/'.$menu_item["icon"]) }}" alt="{{ $menu_item["name"] }}">
                         </a>
                     </li>
                     @endforeach
