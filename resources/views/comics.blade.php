@@ -12,10 +12,12 @@
             <div class="cards-container">
                 @foreach ($comics as $comic)
                 <div class="gp-card">
+                  <a href="{{ route("comic_details", ["slug" => $comic["slug"]]) }}">
                     <div class="thumb">
-                    <img src="{{ $comic["thumb"] }}" alt="{{ $comic["series"] }}">
+                      <img src="{{ $comic["thumb"] }}" alt="{{ $comic["series"] }}">
                     </div>
-                    <h5 class="fs-md fw-light">{{ $comic["series"] }}</h5>
+                    <h5 class="fs-md fw-light text-white">{{ $comic["series"] }}</h5>
+                  </a>
                 </div>
                 @endforeach
             </div>

@@ -6,7 +6,7 @@
     <div class="gp-container">
 
       <div class="logo">
-        <img src="img/dc-logo.png" alt="Logo DC">
+        <img src="/img/dc-logo.png" alt="Logo DC">
       </div>
 
       <nav>

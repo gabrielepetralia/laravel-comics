@@ -13,7 +13,7 @@
             display: inline-block;
             text-transform: uppercase;
             color: white;
-            background-color: $primary-color;
+            background-color: $my-blue;
             padding: 10px 30px;
         }
 
@@ -30,6 +30,11 @@
                     aspect-ratio: 1 / 1;
                     margin-bottom: 20px;
                     overflow: hidden;
+                    transition: all 0.2s;
+
+                    &:hover {
+                      transform: scale(1.1);
+                    }
                 }
 
                 h5 {
@@ -45,7 +50,7 @@
             button {
                 text-transform: uppercase;
                 color: white;
-                background-color: $primary-color;
+                background-color: $my-blue;
                 border: none;
                 letter-spacing: 0.1rem;
                 padding: 12px 55px;

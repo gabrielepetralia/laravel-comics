@@ -54,3 +54,10 @@ Route::get('/shop', function () {
     return view('shop');
 })->name("shop");
 
+Route::get('/comic_details/{slug}', function ($slug) {
+  $comics = config("comics");
+  $comicFiltered = array_filter($comics, fn($comic) => $comic["slug"] === $slug);
+  $comic = $comicFiltered[array_key_first($comicFiltered)];
+  return view('comic_details', compact("comic"));
+})->name("comic_details");
+
